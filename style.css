@@ -1,0 +1,153 @@
+
+
+* { box-sizing: border-box; }
+
+/* Clearfix */
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*Page styles*/
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', helvetica, sans-serif;
+}
+
+a {
+	color: orange;
+  transition: 333ms all ease-in-out;
+}
+
+a:hover {
+color: blue;
+}
+
+/*Grid*/
+.row {
+	width: 90%;
+	max-width: 800px;
+	margin: 0 auto 20px;
+}
+
+.column {
+  float: left;
+  margin-right: 2%;
+}
+
+.column h3 {
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+.column.two-third {
+  width: 65%;
+}
+.column.one-half {
+  width: 49%;
+}
+.column.one-third {
+  width: 32%
+}
+
+.column:last-of-type {
+  margin-right: 0;
+}
+
+/*header*/
+header {
+	background: #ccc;
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+body#home header {
+	margin-bottom: 0;
+}
+
+header .row {
+	margin-bottom: 0;
+}
+
+.logo {
+float: none;
+    width: 80px;
+border-radius: 50%; 
+}
+
+nav {
+	margin-top: 21px;
+}
+
+header nav {
+	float: right;
+	text-align: right;
+}
+
+nav a {
+	margin-right: 20px;
+	font-size: 13px;
+	color: #444;
+	text-decoration: none;
+}
+
+nav a:last-of-type {
+	margin: 0;
+}
+
+/* Hero */
+.hero {ƒ
+  background: #ccc;
+  background-image: url('https://images.unsplash.com/photo-1445966275305-9806327ea2b5?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=cdfbc4e573863a663da085a79cef7ba0');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.hero h1 {
+  margin: 0;
+  padding: 120px 0;
+  color: white;
+  text-shadow: 0 0 10px #444;
+  text-align: center;
+}
+
+/*footer*/
+footer {
+	background: #ccc;
+	margin-top: 60px;
+	padding: 5px 0;
+	font-size: 11px;
+	text-align: center;
+}
+/* Responsive */
+@media (max-width: 500px) {
+  header {
+    text-align: center;
+  }
+
+  .logo {
+    float: none;
+    width: 80px;
+border-radius: 50%;    
+  }
+
+  header nav {
+    float: none;
+    text-align: center;
+  }
+
+  .column {
+    width: 100% !important;
+    margin-right: 0;
+  }
+}
