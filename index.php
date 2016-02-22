@@ -1,39 +1,20 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Galvanize Test Project</title>
+<?php 
+$pageTitle = 'Home';
+?>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Site header -->
 
-    <link rel="stylesheet" href="style.css">
-
-    <link href='https://fonts.googleapis.com/css?family=Indie+Flower|Gloria+Hallelujah' rel='stylesheet' type='text/css'>
-
-    
-  </head>
-
-  <body id="home">
-
- <header>
-  <div class="row clearfix">
-   
-
-
-    <!-- Our Site Navigation -->
-    <nav>
-        <a href="index.html">Need a friend?</a>
-        <a href="mailto:alicia.m.cohn@gmail.com">Email</a>
-    </nav>
-
-  </div>
-</header>
-
+<?php include 'header.php'; ?>
   <!-- Content goes here -->
   
 <!-- Our site's hero area -->
 <div class="hero">
   <div class="row clearfix">
-      <h1>Good morning beautiful</h1>
+  <?php if(empty ($userName)) : ?>
+          <h1>Who you be? <a href="login.php">Login here</a></h1>
+  <?php else : ?>
+    <h1>Good morning <?php echo $userName; ?></h1>
+    <?php endif; ?>
   </div>
 </div>
 
@@ -76,15 +57,5 @@ Although there's nothing she can do.
   </div>
 </div>
 
-<!-- End content here -->
-
-<footer>
-
-<a href="index.html"><img class="logo" src="http://media.caranddriver.com/images/14q4/638369/2015-dodge-dart-24l-automatic-test-review-car-and-driver-photo-653193-s-429x262.jpg"/></a>
-
-
-  <!-- Site Copyright -->
-    <p>This was coded by Alicia M. Cohn to make Amie's morning better</p>
-</footer>
-  </body>
-</html>
+<!-- Site footer -->
+<?php include 'footer.php'; ?>

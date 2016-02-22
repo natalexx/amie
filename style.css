@@ -33,6 +33,14 @@ a:hover {
 color: blue;
 }
 
+.button {
+  background:blue;
+  color: white;
+padding: 10px 15px;
+font-size: 13px;
+text-decoration:none;
+}
+
 /*Grid*/
 .row {
 	width: 90%;
@@ -129,6 +137,22 @@ footer {
 	font-size: 11px;
 	text-align: center;
 }
+
+/*Blog styles*/
+.blog-roll {
+  padding-left:0;
+}
+
+.blog-roll li {
+  display:block;
+  list-style:none;
+  margin-bottom: 60px;
+}
+
+.blog-roll li p {
+  margin-bottom: 25px;
+}
+
 /* Responsive */
 @media (max-width: 500px) {
   header {
